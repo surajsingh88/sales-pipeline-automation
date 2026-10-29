@@ -2,3 +2,5 @@ venv/
 *.csv
 __pycache__/
 
+*.duckdb
+*.duckdb.wal
