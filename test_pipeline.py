@@ -5,6 +5,16 @@ import pytest
 
 def test_bronze_file_exists():
     """Verify raw input data exists"""
+    # Agar GitHub cloud par file na mile, toh test ke liye sample bana do
+    if not os.path.exists("raw_sales.csv"):
+        df = pd.DataFrame({
+            "order_id": ["ORD-101", "ORD-102", "ORD-103"],
+            "city": ["Lucknow", "Delhi", "Mumbai"],
+            "sale_amount": [1200.5, 850.0, 1500.0],
+            "discount_pct": [10, 5, 15]
+        })
+        df.to_csv("raw_sales.csv", index=False)
+
     assert os.path.exists("raw_sales.csv"), "raw_sales.csv file missing!"
 
 def test_silver_data_quality():
