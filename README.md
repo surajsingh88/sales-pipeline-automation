@@ -38,6 +38,8 @@ An enterprise-grade, automated **Medallion Architecture ETL Pipeline** built wit
 │   - Real-time telemetry via Prefect Web Dashboard      │
 └────────────────────────────────────────────────────────┘
 
+```
+
 ## 📊 Executive Sales Intelligence Dashboard
 
 ![Executive Sales Intelligence Dashboard](dashboard.png)
